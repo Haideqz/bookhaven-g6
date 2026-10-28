@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt - BookHaven</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="receipt.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+                <img src="../Global/bookhaven-logo.png" alt="BookHaven Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a>
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filled in by receipt.js from the saved order -->
+        <section id="receipt" hidden>
+            <div class="receipt-head">
+                <h2>BookHaven</h2>
+                <p>Order Receipt</p>
+            </div>
+
+            <div class="receipt-info">
+                <p><strong>Order No.:</strong> <span id="orderNo"></span></p>
+                <p><strong>Date:</strong> <span id="orderDate"></span></p>
+                <p><strong>Name:</strong> <span id="custName"></span></p>
+                <p><strong>Delivery Location:</strong> <span id="custLocation"></span></p>
+                <p><strong>Payment Method:</strong> <span id="payMethod"></span></p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="receiptItems"></tbody>
+            </table>
+
+            <p class="receipt-total" id="receiptTotal">Total: ₱0</p>
+            <p class="thanks">Thank you for shopping at BookHaven!</p>
+
+            <div class="receipt-buttons">
+                <button type="button" id="printBtn">Print Receipt</button>
+                <a href="../Products/prod.html" id="shopAgain">Continue Shopping</a>
+            </div>
+        </section>
+
+        <p id="noReceipt" hidden>No receipt to show yet. <a href="../Products/prod.html">Browse our books</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="../Global/script.js"></script>
+    <script src="receipt.js"></script>
+</body>
+
+</html>

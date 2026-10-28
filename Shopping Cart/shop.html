@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <script src="../Global/script.js" defer></script>
+    <script src="shop.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+                <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a> <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="Cart">
+            <h1>Your Cart</h1>
+
+            <!-- Items are added here by shop.js -->
+            <ul id="listitem"></ul>
+
+            <p id="emptyMessage" hidden>Your cart is empty. <a href="../Products/prod.html">Browse our books</a></p>
+
+            <div id="cartSummary" hidden>
+                <p id="cartTotal">Total: ₱0</p>
+                <button type="button" id="clearBtn">Clear Cart</button>
+                <a href="../Checkout/checkout.html" id="checkoutBtn">Checkout</a>
+            </div>
+        </div>
+
+        <aside id="Suggestions">
+            <h2>Suggested for you</h2>
+            <!-- Filled in by shop.js -->
+            <div id="suggestionList"></div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+                <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a>
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="Signupform">
+            <img src="https://thumbs.dreamstime.com/b/elegant-library-curved-staircase-stunning-features-sweeping-adds-touch-elegance-to-its-vast-collection-rare-332385666.jpg" alt="Library with stairs" width="500">
+
+            <div>
+                <!-- Filled in by signup.js: welcome back / success messages -->
+                <p id="formMessage" class="form-message" hidden></p>
+
+                <form id="signup-form" novalidate>
+                    <h2>Create your account</h2>
+
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" autocomplete="username">
+                    <span class="error" id="usernameError"></span>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password">
+                    <span class="error" id="passwordError"></span>
+
+                    <label for="confirmPassword">Re-enter Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password">
+                    <span class="error" id="confirmError"></span>
+
+                    <label class="show-password">
+                        <input type="checkbox" id="showPassword"> Show passwords
+                    </label>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+
+#Signupform {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px 40px;
+  justify-content: center; 
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Signupform img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: grid;
+  gap: 6px;
+  min-width: 280px;
+  font-size: 15px;
+}
+
+form label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 2px solid #999;
+  border-radius: 6px;
+}
+
+form input:focus-visible,
+form button:focus-visible {
+  outline: 2px solid #4a7c59;
+  outline-offset: 2px;
+}
+
+form input.invalid {
+  border-color: #c62828;
+}
+
+form input.valid {
+  border-color: #2e7d32;
+}
+
+.error {
+  min-height: 1.2em; 
+  font-size: 13px;
+  color: #c62828;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+button[type="submit"] {
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #4a7c59;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #3b6247;
+}
+
+.form-message {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-message.success {
+  color: #1b5e20;
+  background: #e6f4e7;
+  border: 1px solid #2e7d32;
+}
+
+.form-message.error {
+  color: #8e1b1b;
+  background: #fdeaea;
+  border: 1px solid #c62828;
+}
+
+
+@media (max-width: 900px) {
+  #Signupform {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+  }
+}

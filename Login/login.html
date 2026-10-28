@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+                <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a> <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="login-bar">
+            <!-- Filled in by login.js -->
+            <p id="formMessage" class="form-message" hidden></p>
+
+            <form id="logincred" novalidate>
+                <input type="text" id="username" placeholder="Username" autocomplete="username">
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+
+                <label class="show-password">
+                    <input type="checkbox" id="showPassword"> Show password
+                </label>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

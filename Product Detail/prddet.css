@@ -1,0 +1,126 @@
+/* Product Details page (header, nav and footer come from globalstyle.css) */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 40px;
+}
+
+/* Three columns like the wireframe: cover | title + description | buy buttons */
+.detail-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.detail-left {
+    flex: 0 0 240px;
+}
+
+.detail-middle {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.detail-right {
+    flex: 0 0 260px;
+}
+
+.detail-left h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+}
+
+/* Cover box: crossed lines show while there is no picture (same look as the Products page) */
+.cover-box {
+    aspect-ratio: 5 / 8;
+    border: 1px solid #333;
+    background:
+        linear-gradient(to top right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px)),
+        linear-gradient(to bottom right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px));
+}
+
+.cover-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-middle h2 {
+    margin: 0 0 14px;
+    font-size: 30px;
+}
+
+.detail-middle p {
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#bookInfo {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.detail-right h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.detail-right p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Two-line buttons: bold main text with smaller sub text (from the wireframe) */
+.detail-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    padding: 10px 18px;
+    font-family: inherit;
+    color: white;
+    background-color: #4a7c59;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.detail-btn strong {
+    font-size: 15px;
+}
+
+.detail-btn span {
+    font-size: 11px;
+}
+
+.detail-btn:hover {
+    background-color: #3b6247;
+}
+
+/* Phones and small screens: stack the columns */
+@media (max-width: 800px) {
+    .detail-wrap {
+        flex-direction: column;
+    }
+
+    .detail-left,
+    .detail-right {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .cover-box {
+        width: 200px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" type="text/css" href="cntcus.css">
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <script src="cnctus.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+            <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a> <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact us</h2>
+            <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="Phone icon"
+                class="phone-icon">
+            <h3>BookHaven</h3>
+            <p>Welcome to BookHaven! We are happy to hear from you. If you have any questions about our books, products,
+                or services, feel free to send us a message. We will do our best to assist you and make your reading
+                experience enjoyable.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send us a message</h2>
+
+            <!-- novalidate lets our JavaScript show the error messages instead of the browser's -->
+            <form id="contactForm" novalidate>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" placeholder="Enter your message"></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+            </form>
+
+            <!-- Filled in by cnctus.js -->
+            <p id="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

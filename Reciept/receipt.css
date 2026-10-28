@@ -1,0 +1,133 @@
+main {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#receipt {
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+#receipt[hidden],
+#noReceipt[hidden] {
+    display: none;
+}
+
+.receipt-head {
+    text-align: center;
+    border-bottom: 2px dashed #bbb;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.receipt-head h2 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.receipt-head p {
+    margin: 0;
+    color: #666;
+}
+
+.receipt-info p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    border-bottom: 2px solid #333;
+}
+
+.num {
+    text-align: right;
+}
+
+th:nth-child(n+2) {
+    text-align: right;
+}
+
+.receipt-total {
+    margin: 20px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.thanks {
+    text-align: center;
+    margin: 25px 0 0;
+    padding-top: 15px;
+    border-top: 2px dashed #bbb;
+    color: #666;
+}
+
+.receipt-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+#printBtn {
+    padding: 11px 24px;
+    font: inherit;
+    font-weight: 600;
+    color: #4a7c59;
+    background: #fff;
+    border: 1px solid #4a7c59;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#printBtn:hover {
+    background: #eef4f0;
+}
+
+#shopAgain {
+    padding: 12px 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: #4a7c59;
+    border-radius: 8px;
+}
+
+#shopAgain:hover {
+    background: #3b6247;
+}
+
+#noReceipt a {
+    color: #4a7c59;
+}
+
+/* When printing, show only the receipt */
+@media print {
+    header,
+    footer,
+    .receipt-buttons {
+        display: none;
+    }
+
+    #receipt {
+        border: none;
+        background: #fff;
+    }
+}

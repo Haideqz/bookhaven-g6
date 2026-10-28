@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - BookHaven</title>
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+                <img src="../Global/bookhaven-logo.png" alt="BookHaven Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a>
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Payment Details Section -->
+        <section class="payment-section">
+            <h2>Payment Details</h2>
+            
+            <form id="checkoutForm" onsubmit="return validateAndPay(event)">
+                <div class="form-box">
+                    <div class="form-group">
+                        <label for="fullName">Name<span class="required">*</span></label>
+                        <input type="text" id="fullName" value="Messina Cake" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Enter your delivery location">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Card / Account Number</label>
+                        <input type="text" id="cardNumber" placeholder="XXXX - XXXX - XXXX - XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expDate">Expiration Date & Security Code</label>
+                        <input type="text" id="expDate" placeholder="MM/YY | CVC">
+                    </div>
+
+                    <label class="section-label">Select Payment Method</label>
+                    <div class="payment-methods">
+                        <div class="pay-card active" onclick="selectPayment(this)">
+                            <img src="6963703.png" alt="Credit Card">
+                        </div>
+                        <div class="pay-card" onclick="selectPayment(this)">
+                            <img src="gcash-com-logo.png" alt="GCash">
+                        </div>
+                        <div class="pay-card" onclick="selectPayment(this)">
+                            <img src="e7766f8d5b9c4e8ede38352401da7fd3.png" alt="PayPal">
+                        </div>
+                    </div>
+
+                    <div class="terms-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">Terms and Agreement</label>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Cart Section -->
+        <section class="cart-section">
+            <h2>Cart</h2>
+            
+            <div class="cart-container">
+                <!-- Items are added here by checkout.js -->
+                <div id="checkoutItems"></div>
+                <p class="cart-total" id="checkoutTotal">Total: ₱0</p>
+            </div>
+
+            <button type="submit" form="checkoutForm" class="pay-now-btn">Pay now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="../Global/script.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Books</title>
+    <link rel="stylesheet" type="text/css" href="prod.css">
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <script src="prod.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="../Global/bookhaven-logo.png" alt="Logo">
+            <h1>BookHaven</h1>
+        </div>
+        <button id="menuToggle">☰</button>
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a>   <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+    <main>
+        <h2>All Books</h2>
+        <div class="book-grid">
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#3"><div class="book-cover">
+                    <img src="https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg" alt="To Kill a Mockingbird cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#3">To Kill a Mockingbird</a></h3>
+                <p class="author">Harper Lee</p>
+                <p class="price">₱349</p>
+                <button class="buy-btn" data-id="3" data-name="To Kill a Mockingbird" data-price="349">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#4"><div class="book-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_CeFa_pAWhqTEdVlP2d6SqPZB-8I_OWNavIFc5ItAE8o2IrNeGI6v8NVb&s=10" alt="1984 cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#4">1984</a></h3>
+                <p class="author">George Orwell</p>
+                <p class="price">₱279</p>
+                <button class="buy-btn" data-id="4" data-name="1984" data-price="279">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#5"><div class="book-cover">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="The Great Gatsby cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#5">The Great Gatsby</a></h3>
+                <p class="author">F. Scott Fitzgerald</p>
+                <p class="price">₱249</p>
+                <button class="buy-btn" data-id="5" data-name="The Great Gatsby" data-price="249">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#6"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_.jpg" alt="Pride and Prejudice cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#6">Pride and Prejudice</a></h3>
+                <p class="author">Jane Austen</p>
+                <p class="price">₱259</p>
+                <button class="buy-btn" data-id="6" data-name="Pride and Prejudice" data-price="259">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#7"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg" alt="The Hobbit cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#7">The Hobbit</a></h3>
+                <p class="author">J.R.R. Tolkien</p>
+                <p class="price">₱399</p>
+                <button class="buy-btn" data-id="7" data-name="The Hobbit" data-price="399">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#8"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter and the Sorcerer's Stone cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#8">Harry Potter and the Sorcerer's Stone</a></h3>
+                <p class="author">J.K. Rowling</p>
+                <p class="price">₱449</p>
+                <button class="buy-btn" data-id="8" data-name="Harry Potter and the Sorcerer's Stone" data-price="449">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#9"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MTUzMTAzMl5BMl5BanBnXkFtZTcwNTE0NTcyMw@@._V1_.jpg" alt="Charlotte's Web" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#9">Charlotte's Web</a></h3>
+                <p class="author">E.B. White</p>
+                <p class="price">₱299</p>
+                <button class="buy-btn" data-id="9" data-name="Charlotte's Web" data-price="299">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#10"><div class="book-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUo53iITq198gMs4K7m3X5fz4U5133wKRPfey_1307010jd0Zq084wqw&s=10" alt="The Very Hungry Caterpillar" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#10">The Very Hungry Caterpillar</a></h3>
+                <p class="author">Eric Carle</p>
+                <p class="price">₱259</p>
+                <button class="buy-btn" data-id="10" data-name="The Very Hungry Caterpillar" data-price="259">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#11"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/8106lPWfXpL._AC_UF1000,1000_QL80_.jpg" alt="Atomic Habits cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#11">Atomic Habits</a></h3>
+                <p class="author">James Clear</p>
+                <p class="price">₱499</p>
+                <button class="buy-btn" data-id="11" data-name="Atomic Habits" data-price="499">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#12"><div class="book-cover">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601937850l/54814676.jpg" alt="Crying in H Mart cover" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#12">Crying in H Mart</a></h3>
+                <p class="author">Michelle Zauner</p>
+                <p class="price">₱429</p>
+                <button class="buy-btn" data-id="12" data-name="Crying in H Mart" data-price="429">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#13"><div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg" alt="Sapiens" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#13">Sapiens</a></h3>
+                <p class="author">Yuval Noah Harari</p>
+                <p class="price">₱549</p>
+                <button class="buy-btn" data-id="13" data-name="Sapiens" data-price="549">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#14"><div class="book-cover">
+                    <img src="https://bookmanager.com/i/m?b=jnrY0tSV8_916ypSnHB41w" alt="Watchmen" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#14">Watchmen</a></h3>
+                <p class="author">Alan Moore</p>
+                <p class="price">₱599</p>
+                <button class="buy-btn" data-id="14" data-name="Watchmen" data-price="599">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#15"><div class="book-cover">
+                <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1599510447i/182175.jpg" alt="Maus" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#15">Maus</a></h3>
+                <p class="author">Art Spiegelman</p>
+                <p class="price">₱549</p>
+                <button class="buy-btn" data-id="15" data-name="Maus" data-price="549">BUY</button>
+            </article>
+            <article class="book-card">
+                <a href="../Product Detail/prddet.html#16"><div class="book-cover">
+                    <img src="https://images.thenile.io/r1000/9780375714832.jpg" alt="Persepolis" onerror="this.style.display='none'">
+                </div></a>
+                <h3><a href="../Product Detail/prddet.html#16">Persepolis</a></h3>
+                <p class="author">Marjane Satrapi</p>
+                <p class="price">₱499</p>
+                <button class="buy-btn" data-id="16" data-name="Persepolis" data-price="499">BUY</button>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

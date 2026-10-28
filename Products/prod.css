@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 2px solid #eee;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-area img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.logo-area h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #4a7c59;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login {
+  border: 1px solid #4a7c59;
+  color: #4a7c59;
+}
+
+.signup {
+  background-color: #4a7c59;
+  color: white;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 30px 40px;
+}
+
+main h2 {
+  font-size: 30px;
+  margin: 10px 0 25px;
+}
+
+.book-grid {
+  display: grid;
+  /* As many cards per row as fit, each at least 150px wide */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 24px 20px;
+}
+
+.book-card {
+  text-align: center;
+}
+
+.book-cover {
+  aspect-ratio: 5 / 8;
+  border: 1px solid #333;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px));
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book-card h3 {
+  margin: 10px 0 2px;
+  font-size: 15px;
+}
+
+.book-card .author {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: #777;
+}
+
+.book-card .price {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.buy-btn {
+  background-color: #4a7c59;
+  color: white;
+  border: none;
+  padding: 7px 22px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #3b6247;
+}
+
+/* Hamburger button: hidden on desktop */
+#menuToggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #eee;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Phones: collapsible menu */
+@media (max-width: 700px) {
+  #menuToggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+/* Cover and title link to the Product Details page */
+.book-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-card h3 a:hover {
+  color: #4a7c59;
+  text-decoration: underline;
+}

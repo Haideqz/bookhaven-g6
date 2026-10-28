@@ -1,0 +1,78 @@
+.login-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  margin: 40px auto;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+
+.login-bar form {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-bar input[type="text"],
+.login-bar input[type="password"] {
+  padding: 8px 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-bar input.invalid {
+  border-color: #c62828;
+}
+
+.login-bar button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* Message box above the form (set by login.js) */
+.form-message {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-message.success {
+  color: #1b5e20;
+  background: #e6f4e7;
+  border: 1px solid #2e7d32;
+}
+
+.form-message.error {
+  color: #8e1b1b;
+  background: #fdeaea;
+  border: 1px solid #c62828;
+}
+/* Green button to match the rest of the site */
+.login-bar button[type="submit"] {
+  background-color: #4a7c59;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+.login-bar button[type="submit"]:hover {
+  background-color: #3b6247;
+}

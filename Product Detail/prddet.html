@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="prddet.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+            <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a> <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+  
+
+    <main>
+        <div class="detail-wrap">
+
+            <!-- LEFT: heading and book cover (<img>) -->
+            <section class="detail-left">
+                <h2>Book Details</h2>
+                <div class="cover-box">
+                    <img id="bookCover" src="../Home Main/book-cover-generic.jpg" alt="Book cover"
+                        onerror="this.onerror=null; this.src='../Home Main/book-cover-generic.jpg'">
+                </div>
+            </section>
+
+            <!-- MIDDLE: book title (<h2>), description and the <ul> of short lines -->
+            <section class="detail-middle">
+                <h2 id="bookTitle">Loading...</h2>
+                <p id="bookAbout">Description</p>
+                <ul id="bookInfo">
+                    <li id="infoAuthor">Author</li>
+                    <li id="infoCategory">Category</li>
+                    <li id="infoGenre">Genre</li>
+                    <li id="infoPrice">Price</li>
+                </ul>
+            </section>
+
+            <!-- RIGHT: heading, paragraph and the two buttons -->
+            <section class="detail-right">
+                <h3>Get this Book</h3>
+                <p>Add it to your cart and keep shopping, or buy it right now.</p>
+
+                <div class="button-row">
+                    <button type="button" class="detail-btn" onclick="addThisToCart()">
+                        <strong>Add to Cart</strong>
+                        <span id="cartBtnSub">Price</span>
+                    </button>
+
+                    <button type="button" class="detail-btn" onclick="buyNow()">
+                        <strong>Buy Now</strong>
+                        <span>Go to checkout</span>
+                    </button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+    <script src="../Global/script.js"></script>
+    <script src="prddet.js"></script>
+
+</body>
+
+</html>

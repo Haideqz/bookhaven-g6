@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+    <link rel="stylesheet" type="text/css" href="../Global/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="categ.css">
+    <script src="../Global/script.js" defer></script>
+    <script src="categ.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <a href="../Home Main/home.html">
+            <img src="../Global/bookhaven-logo.png" alt="Logo">
+            </a>
+            <h1>BookHaven</h1>
+        </div>
+
+        <nav>
+            <a href="../Home Main/home.html">Home</a>
+            <a href="../About Us/abtus.html">About Us</a>
+            <a href="../Products/prod.html">Product</a>
+            <a href="../Categories/categ.html">Categories</a> <!--WAIT FOR ALVIC-->
+            <a href="../Contact Us/cntcus.html">Contact Us</a>
+            <a href="../Shopping Cart/shop.html">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="../Login/login.html" class="login">Log In</a>
+            <a href="../Sign Up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="page-title">CATEGORIES</h2>
+
+        <div class="categ-content">
+            <aside class="categ-sidebar">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#Fiction">Fiction</a></li>
+                    <li><a href="#Non-Fiction">Non-Fiction</a></li>
+                    <li><a href="#Children">Children</a></li>
+                    <li><a href="#Comics">Comics</a></li>
+                </ul>
+            </aside>
+
+            <section class="categ-grid">
+                <div class="card" data-category="Fiction">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTavK_BJmzdospVKIMFKKvgi_L_X4WAwG4aD4yebmfnJHFRgoDx7g_zQ5g&s=10" alt="Open Book">
+                    <h4>Fiction</h4>
+                </div>
+
+                <div class="card" data-category="Non-Fiction">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5979efb7197aeafed276c1de/1588324189321-2PDOO8SM8MT1QF2NA0DG/How+to+write+a+science+fiction+story" alt="Science Fiction">
+                    <h4>Non-Fiction</h4>
+                </div>
+
+                <div class="card" data-category="Children">
+                    <img src="https://miriamlaundry.com/wp-content/uploads/2020/02/3-self-esteem-tips-kids.jpg" alt="children reading books">
+                    <h4>Children</h4>
+                </div>
+
+                <div class="card" data-category="Comics">
+                    <img src="https://storytellingdb.com/wp-content/uploads/2019/10/amalgam-banner.jpg" alt="marvel vs dc poster">
+                    <h4>Comics</h4>
+                </div>
+            </section>
+
+            <!-- Shown by categ.js when a category is picked -->
+            <section class="categ-results" id="categResults" hidden>
+                <div class="results-header">
+                    <h3 id="resultsTitle">Category</h3>
+                    <a href="#" id="backLink">&larr; All Categories</a>
+                </div>
+                <div class="results-grid" id="resultsGrid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAME. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

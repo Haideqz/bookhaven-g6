@@ -37,8 +37,8 @@
         <h2>WELCOME TO BOOKHAVEN</h2>
         <p>Find your next favorite book below</p>
         <div class="search-bar">
-            <input type="text" placeholder="Search for book...">
-            <button>Search</button>
+            <input id="bookSearchInput" type="text" placeholder="Search for book..." aria-label="Search for a book">
+            <button id="searchButton" type="button">Search</button>
         </div>
     </section>
 
@@ -55,6 +55,7 @@
 
         <div class="book-section">
             <h3>Featured Books</h3>
+            <div id="noResultsMessage" style="display:none; margin: 0 0 15px; color: #7a2a2a; font-weight: 600;">No books match your search.</div>
             <div class="book-grid">
                 <div class="book-card">
                     <a href="../Product%20Detail/prddet.html#11">
@@ -81,6 +82,33 @@
     <footer>
         <p>&copy; 2026 BookHaven. All rights reserved.</p>
     </footer>
+
+    <script>
+        const searchInput = document.getElementById('bookSearchInput');
+        const searchButton = document.getElementById('searchButton');
+        const bookCards = Array.from(document.querySelectorAll('.book-card'));
+        const noResultsMessage = document.getElementById('noResultsMessage');
+
+        function filterBooks() {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            bookCards.forEach((card) => {
+                const cardText = card.textContent.toLowerCase();
+                const matches = query === '' || cardText.includes(query);
+                card.style.display = matches ? '' : 'none';
+
+                if (matches) {
+                    visibleCount += 1;
+                }
+            });
+
+            noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        searchInput.addEventListener('input', filterBooks);
+        searchButton.addEventListener('click', filterBooks);
+    </script>
 
 </body>
 
